@@ -500,3 +500,5 @@ h1{font-size:clamp(40px,13.2vw,90px);letter-spacing:-.8px}
 @media(max-width:700px){.field-note{grid-template-columns:1fr;gap:25px;padding:29px 25px 34px;margin-bottom:55px}.field-note:after{font-size:210px;top:-50px;right:-10px}.field-note h2{font-size:clamp(48px,14vw,70px)}.field-note-right strong{font-size:18px}}
 
 .field-note h2 .story-speaker{display:block;font-size:.48em;line-height:1.05;letter-spacing:.02em;margin-top:.35em;color:inherit}
+
+.ui-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em;flex-shrink:0;overflow:visible}

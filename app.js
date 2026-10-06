@@ -16,7 +16,7 @@ function renderMembers(){
   const points=document.createElement('span');points.className='standing-points';points.textContent=m.points+' '+(m.points===1?'point':'points');
   row.append(position,name,points);list.append(row);
  }
- board.replaceChildren(list);expand.hidden=members.length<=5;expand.setAttribute('aria-expanded',String(expanded));expand.textContent=expanded?'Show top five ↑':`View all ${members.length} ↓`;
+ board.replaceChildren(list);expand.hidden=members.length<=5;expand.setAttribute('aria-expanded',String(expanded));expand.textContent=expanded?'Show top five ':`View all ${members.length} `;const arrow=document.createElementNS('http://www.w3.org/2000/svg','svg');arrow.setAttribute('class','ui-icon');arrow.setAttribute('viewBox','0 0 24 24');arrow.setAttribute('aria-hidden','true');arrow.setAttribute('fill','none');arrow.setAttribute('stroke','currentColor');arrow.setAttribute('stroke-width','2');const path=document.createElementNS('http://www.w3.org/2000/svg','path');path.setAttribute('d',expanded?'M12 19V5m-6 6 6-6 6 6':'M12 5v14m-6-6 6 6 6-6');arrow.append(path);expand.append(arrow);
 }
 async function refreshLeaderboard(){
  if(pending)return;pending=true;board.setAttribute('aria-busy','true');

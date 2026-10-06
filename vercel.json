@@ -1,10 +1,52 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://nes-attendance.dasdoh.chatgpt.site/api/:path*" },
-    { "source": "/admin", "destination": "https://nes-attendance.dasdoh.chatgpt.site/admin" },
-    { "source": "/admin/:path*", "destination": "https://nes-attendance.dasdoh.chatgpt.site/admin/:path*" },
-    { "source": "/feedback", "destination": "https://nes-attendance.dasdoh.chatgpt.site/feedback" },
-    { "source": "/check-in/:path*", "destination": "https://nes-attendance.dasdoh.chatgpt.site/check-in/:path*" },
-    { "source": "/_next/:path*", "destination": "https://nes-attendance.dasdoh.chatgpt.site/_next/:path*" }
+    {
+      "source": "/join/config",
+      "destination": "/api/join-config"
+    },
+    {
+      "source": "/join/verify",
+      "destination": "/api/join-verify"
+    },
+    {
+      "source": "/nes-logo.jpg",
+      "destination": "/assets/logo.png"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/api/:path*"
+    },
+    {
+      "source": "/admin",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/admin"
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/admin/:path*"
+    },
+    {
+      "source": "/feedback",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/feedback"
+    },
+    {
+      "source": "/check-in/:path*",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/check-in/:path*"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/_next/:path*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/landing",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/landing/:path*",
+      "destination": "/:path*",
+      "permanent": false
+    }
   ]
 }
