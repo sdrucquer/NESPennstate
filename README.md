@@ -1,3 +1,3 @@
-# Nittany Entrepreneur Society website
+# Nittany Entrepreneur Society
 
-Unified NES landing page and attendance app.
+Public NES landing page, event photography, and NES Stories. This Vercel static site proxies attendance, check-in, feedback, admin, and API routes to the existing NES attendance application.
