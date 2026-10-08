@@ -502,3 +502,5 @@ h1{font-size:clamp(40px,13.2vw,90px);letter-spacing:-.8px}
 .field-note h2 .story-speaker{display:block;font-size:.48em;line-height:1.05;letter-spacing:.02em;margin-top:.35em;color:inherit}
 
 .ui-icon{display:inline-block;width:1em;height:1em;vertical-align:-.12em;flex-shrink:0;overflow:visible}
+
+.nyc-survey-link{margin-top:20px;border-top:1px solid #b9d5e5;padding-top:20px}.nyc-survey-link strong{display:block;font-size:18px;color:#073b68}.nyc-survey-link p{font-size:14px;line-height:1.6;margin:8px 0 14px}.nyc-survey-link a{display:inline-flex;align-items:center;gap:12px;min-height:44px;padding:10px 16px;background:#073b68;color:white;text-decoration:none;font-weight:700}.nyc-survey-link a:focus-visible{outline:3px solid #00b5ee;outline-offset:4px}

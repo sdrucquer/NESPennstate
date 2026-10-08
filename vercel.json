@@ -13,6 +13,10 @@
       "destination": "/assets/logo.png"
     },
     {
+      "source": "/nyc-preferences",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/nyc-preferences"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://nes-attendance.dasdoh.chatgpt.site/api/:path*"
     },
