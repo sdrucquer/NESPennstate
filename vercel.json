@@ -17,6 +17,10 @@
       "destination": "https://nes-attendance.dasdoh.chatgpt.site/nyc-preferences"
     },
     {
+      "source": "/nyc-trip",
+      "destination": "https://nes-attendance.dasdoh.chatgpt.site/nyc-trip"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://nes-attendance.dasdoh.chatgpt.site/api/:path*"
     },
