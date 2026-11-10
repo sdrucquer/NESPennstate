@@ -37,3 +37,7 @@ refreshLeaderboard();setInterval(refreshLeaderboard,300000);
 if('IntersectionObserver'in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
  document.documentElement.classList.add('motion-ready');const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}},{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 }
+(()=>{const up=document.getElementById('events-upcoming'),past=document.getElementById('events-past');if(!up||!past)return;
+const today=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());
+for(const a of [...up.querySelectorAll('article[data-date]')].reverse()){if(a.dataset.date<today)past.prepend(a);}
+if(!up.querySelector('article')){const p=document.createElement('p');p.className='semester-note';p.textContent='New events coming soon. GroupMe has the latest.';up.append(p);}})();
