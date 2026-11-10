@@ -76,4 +76,15 @@
     }
     if (!next) { const li = document.createElement('li'); li.className = 'cal-note'; li.textContent = 'New events coming soon. GroupMe has the latest.'; up.append(li); }
   }
+  // 60-second recap video in a dialog
+  const dlg = document.getElementById('recap');
+  if (dlg && dlg.showModal) {
+    const v = dlg.querySelector('video');
+    document.querySelectorAll('[data-recap]').forEach(b => b.addEventListener('click', () => { dlg.showModal(); v.play().catch(() => {}); }));
+    dlg.querySelector('.recap-x').addEventListener('click', () => dlg.close());
+    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('close', () => v.pause());
+  } else {
+    document.querySelectorAll('[data-recap]').forEach(b => b.addEventListener('click', () => { location.href = 'assets/nyc26/recap.mp4'; }));
+  }
 })();

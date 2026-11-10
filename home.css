@@ -307,3 +307,14 @@ footer a:not(.fb){font-weight:600}
 .talk .btn{background:#fff;color:var(--ink)}
 .talk .btn:hover{background:#eaf7ff}
 .res-label{font-size:14px;color:var(--muted);margin:0 0 14px}
+
+/* 60-second recap video */
+button.btn{border:0;cursor:pointer}
+.btn.ghost svg{width:14px;height:14px}
+.recap-dlg{padding:0;border:0;background:transparent;max-width:none;max-height:none;overflow:visible}
+.recap-dlg::backdrop{background:rgba(2,18,34,.88);backdrop-filter:blur(6px)}
+.recap-dlg video{display:block;height:min(86svh,860px);width:auto;max-width:92vw;aspect-ratio:9/16;object-fit:cover;background:#000;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.recap-x{position:absolute;right:0;top:-44px;height:34px;padding:0 14px;border:0;background:#fff;color:var(--ink);font:700 13px var(--ui);cursor:pointer;border-radius:999px}
+.recap-dlg[open]{animation:recapIn .45s var(--ease) both}
+@keyframes recapIn{from{opacity:0;transform:translateY(16px) scale(.97)}}
+@media (prefers-reduced-motion:reduce){.recap-dlg[open]{animation:none}}
