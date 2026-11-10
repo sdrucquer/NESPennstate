@@ -300,3 +300,10 @@ footer a:not(.fb){font-weight:600}
   .marquee [aria-hidden=true]{display:none}
   .js .rv,.js .rv-stagger>*{opacity:1;transform:none}
 }
+.talk{margin-top:30px;background:var(--ink);color:#fff;padding:28px 28px 30px}
+.talk small{font:700 11px var(--ui);letter-spacing:2px;text-transform:uppercase;color:var(--sky)}
+.talk h3{font:800 clamp(32px,3vw,42px)/.95 var(--display);text-transform:uppercase;margin:10px 0 12px}
+.talk p{color:#c6d9e7;line-height:1.6;margin:0 0 22px;font-size:15px}
+.talk .btn{background:#fff;color:var(--ink)}
+.talk .btn:hover{background:#eaf7ff}
+.res-label{font-size:14px;color:var(--muted);margin:0 0 14px}
