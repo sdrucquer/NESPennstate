@@ -104,3 +104,6 @@
 .notes-hero h1 .story-speaker{display:block;font-size:.5em;line-height:1.05;letter-spacing:.02em;margin-top:.35em;color:inherit}
 
 .notes-card h2 .story-speaker{display:block;font-size:.6em;line-height:1.1;margin-top:.3em;color:#007fae}
+
+.notes-card.has-photo{grid-template-columns:160px 1fr 240px auto}.notes-card-photo{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+@media(max-width:800px){.notes-card.has-photo{grid-template-columns:1fr auto}.notes-card-photo{grid-column:1/-1;grid-row:2;aspect-ratio:16/9}}

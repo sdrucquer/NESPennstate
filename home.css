@@ -119,6 +119,7 @@ a{color:inherit;text-decoration:none}
 .s-card.big{grid-column:span 2;grid-row:span 2}
 .s-card.big h3{font-size:clamp(46px,5vw,74px)}
 .s-card.big h3 em{font-style:normal;color:var(--sky)}
+.s-card.wide{grid-column:span 2;min-height:300px}
 .s-card.text{background:#fff;color:var(--ink);border:1px solid var(--line);grid-column:span 2;min-height:170px}
 .s-card.text:after{display:none}
 .s-card.text small{color:var(--blue)}
@@ -278,7 +279,7 @@ footer a:not(.fb){font-weight:600}
   .section{padding:84px 0}
   .section-head{flex-direction:column;align-items:start}
   .story-grid,.startups,.trip-row,.winners{grid-template-columns:1fr}
-  .s-card.big,.s-card.text,.earn{grid-column:auto}
+  .s-card.big,.s-card.text,.s-card.wide,.earn{grid-column:auto}
   .moments{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px}
   .expand{height:170vh}
   .expand-frame{width:calc(84% + 16% * var(--ep,0));height:calc(56% + 44% * var(--ep,0))}
